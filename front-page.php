@@ -49,16 +49,10 @@ get_header(); ?>
 
 <?php endif; ?>
 
-
-<!-- CONTACT FORM
+<!-- CONTACT ME section
 =======================================================================-->
 
-<?php if( $show_contact_form == 'Yes'): ?>
-
-    <?php get_template_part( 'template-parts/page/content' , 'contact-form' ); ?>
-
-<?php endif; ?>
-
+<?php get_template_part( 'template-parts/page/content', 'contact-me-section' ); ?>
 
 <!-- FRONT PAGE - PAGE CONTENT      !OPTIONAL!
 //# displays ONLY if there is content written in the page.

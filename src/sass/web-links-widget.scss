@@ -1,0 +1,22 @@
+
+.web-links {
+    padding-top: 90px;
+
+    h6 {
+        color: $primary-color;
+        margin-bottom: $spacing-base * 2;
+    }
+
+    li {
+        margin-bottom: $spacing-base;
+    }
+
+    span {
+        padding-right: $spacing-base;
+    }
+
+    a {
+        padding-left: $spacing-base;
+        color: $mid-grey;
+    }
+}
