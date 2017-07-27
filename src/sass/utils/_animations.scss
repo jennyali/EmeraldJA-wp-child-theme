@@ -1,0 +1,65 @@
+
+//# Animates the text sliding up/fading in on the hero section front page.
+.item__text-container__inner-box { 
+    padding-top: 60px;
+    opacity: 0;
+    transition: all 1s;
+
+}
+
+.carousel-textbox-move {
+    padding-top: 0;
+    opacity: 1; 
+}
+//--------------------------------------------------
+
+//# Makes the image slide/fade in when Bio excerpt section is in view.
+/*#home-bio-excerpt {
+    img {
+        position: relative;
+        right: 60px;
+        opacity: 0;
+        transition: all 0.5s 0.25s ease-in-out;
+    }
+}
+
+#home-bio-excerpt.in-view {
+    img {
+        position: relative;
+        right: 0px;
+        opacity: 1;
+    }
+}*/
+//----------------------------------------------------
+
+//# Stagger fade animates portfolio posts gallery items.
+.masonry-layout__panel {
+    opacity: 0;
+    animation-name: fadeInItem;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
+
+      @for $i from 1 through 6 {
+
+        &:nth-child(#{$i}) { 
+            animation-delay: (0.1s * $i); 
+
+
+      }
+    }
+};
+//----------------------------------------------------
+
+//# fade in carousel on .active class
+@keyframes fadeInItem {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+//----------------------------------------------------
+
+//# rise up carousel caption text
+@keyframes carouselCaptionRaise {
+    from { top: 70%; opacity: 0; }
+    to { top: 50%; opacity: 1}
+}

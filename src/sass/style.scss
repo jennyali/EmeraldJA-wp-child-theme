@@ -1,0 +1,43 @@
+/*
+Theme Name: EmeraldJA Portfolio Child Theme v2
+Theme URI: http://underscores.me/
+Template: EmeraldJA-wp-theme
+Author: Jennifer Ali
+Author URI: http://underscores.me/
+Description: A child theme that will for intended use on real portfolio site.
+Version: 1.0.0.1500757670
+Updated: 2017-07-22 22:07:50
+
+*/
+
+@import 'utils/module';
+
+/* BIO EXECRPT SECTION */
+#home-bio-excerpt {
+    -webkit-clip-path: polygon(0 18%, 100% 0, 100% 100%, 0 84%);
+    clip-path: polygon(0 18%, 100% 0, 100% 100%, 0 84%);
+    padding: 200px 15px 200px 15px;
+}
+
+#home-bio-excerpt .bio-excerpt-section__img {
+    opacity: 1;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    max-width: 300px;
+    border-radius: 100%;
+    margin-bottom: 60px;
+
+}
+
+.bio-excerpt-section__text {
+    max-width: 800px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+/* PORTFOLIO SECTION */
+#home_portfolio {
+    padding: 90px 15px 160px 15px;
+}

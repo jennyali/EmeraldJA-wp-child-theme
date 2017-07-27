@@ -1,0 +1,156 @@
+/*
+Theme Name: EmeraldJA Portfolio Child Theme v2
+Theme URI: http://underscores.me/
+Template: EmeraldJA-wp-theme
+Author: Jennifer Ali
+Author URI: http://underscores.me/
+Description: A child theme that will for intended use on real portfolio site.
+Version: 1.0.0.1500757670
+Updated: 2017-07-22 22:07:50
+
+*/
+/*===========================
+
+        GLOBAL VARIABLES
+
+=============================*/
+/* color
+ed145b
+#06D6A0
+-----------------------*/
+/* font-families
+-----------------------*/
+/* font-size
+-----------------------*/
+/* margin/padding sizing
+-----------------------*/
+/* breakpoints
+-----------------------*/
+/*===========================================
+
+            ELEMENT VARIABLES
+
+==============================================*/
+/*===========================
+
+            MIXINS
+
+=============================*/
+.item__text-container__inner-box {
+  padding-top: 60px;
+  opacity: 0;
+  -webkit-transition: all 1s;
+  transition: all 1s; }
+
+.carousel-textbox-move {
+  padding-top: 0;
+  opacity: 1; }
+
+/*#home-bio-excerpt {
+    img {
+        position: relative;
+        right: 60px;
+        opacity: 0;
+        transition: all 0.5s 0.25s ease-in-out;
+    }
+}
+
+#home-bio-excerpt.in-view {
+    img {
+        position: relative;
+        right: 0px;
+        opacity: 1;
+    }
+}*/
+.masonry-layout__panel {
+  opacity: 0;
+  -webkit-animation-name: fadeInItem;
+  animation-name: fadeInItem;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-timing-function: ease-out;
+  animation-timing-function: ease-out; }
+  .masonry-layout__panel:nth-child(1) {
+    -webkit-animation-delay: 0.1s;
+    animation-delay: 0.1s; }
+  .masonry-layout__panel:nth-child(2) {
+    -webkit-animation-delay: 0.2s;
+    animation-delay: 0.2s; }
+  .masonry-layout__panel:nth-child(3) {
+    -webkit-animation-delay: 0.3s;
+    animation-delay: 0.3s; }
+  .masonry-layout__panel:nth-child(4) {
+    -webkit-animation-delay: 0.4s;
+    animation-delay: 0.4s; }
+  .masonry-layout__panel:nth-child(5) {
+    -webkit-animation-delay: 0.5s;
+    animation-delay: 0.5s; }
+  .masonry-layout__panel:nth-child(6) {
+    -webkit-animation-delay: 0.6s;
+    animation-delay: 0.6s; }
+
+@-webkit-keyframes fadeInItem {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+@keyframes fadeInItem {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+@-webkit-keyframes carouselCaptionRaise {
+  from {
+    top: 70%;
+    opacity: 0; }
+  to {
+    top: 50%;
+    opacity: 1; } }
+
+@keyframes carouselCaptionRaise {
+  from {
+    top: 70%;
+    opacity: 0; }
+  to {
+    top: 50%;
+    opacity: 1; } }
+
+/*=================================================
+
+         Default Post Excurpts Styles
+
+* taking the blog-post as a base for other post types to add on and customize.
+
+==================================================*/
+/* BIO EXECRPT SECTION */
+#home-bio-excerpt {
+  -webkit-clip-path: polygon(0 18%, 100% 0, 100% 100%, 0 84%);
+  clip-path: polygon(0 18%, 100% 0, 100% 100%, 0 84%);
+  padding: 200px 15px 200px 15px; }
+
+#home-bio-excerpt .bio-excerpt-section__img {
+  opacity: 1;
+  position: relative;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+  transform: translate(-50%);
+  max-width: 300px;
+  border-radius: 100%;
+  margin-bottom: 60px; }
+
+.bio-excerpt-section__text {
+  max-width: 800px;
+  position: relative;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+  transform: translate(-50%); }
+
+/* PORTFOLIO SECTION */
+#home_portfolio {
+  padding: 90px 15px 160px 15px; }
+
+/*# sourceMappingURL=style.css.map */

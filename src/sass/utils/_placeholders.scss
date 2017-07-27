@@ -1,0 +1,92 @@
+/*=================================================
+
+         Default Post Excurpts Styles
+
+* taking the blog-post as a base for other post types to add on and customize.
+
+==================================================*/
+
+%post {
+    padding: $spacing-base 0 ($spacing-base * 4);
+    margin-bottom: $spacing-base * 2;
+    border-bottom: 1px solid $light-grey;
+
+        @include mediaQ-min($bp-md) {
+            //padding: $spacing-base 0;
+            padding-bottom: 60px;
+            margin-bottom: 100px;
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+            border-bottom: none;
+    }
+}
+
+%post__meta {
+    padding-bottom: $spacing-base;
+    
+        @include mediaQ-min($bp-md) {
+            display: inline-block;
+        }
+
+        p, 
+        span {
+            display: inline-block;
+            margin-right: $spacing-xs;
+    }
+}
+
+%post__thumbnail {
+    img {
+        @include mediaQ-min($bp-sm) {
+            max-width: 350px;
+        
+
+            @include mediaQ-min($bp-md) {
+                    float: left;
+                    margin-right: $spacing-base;
+            }
+        }
+    }
+}
+
+%blog-post__categories {
+    margin: $spacing-lg 0 ($spacing-base * 2);
+
+        @include mediaQ-min($bp-md) {
+            position: relative;
+            display: block;
+            margin: 0 0 $spacing-base;
+        }
+
+        a {
+            margin-right: $spacing-sm;
+    }
+}
+
+%post__header {
+    h4 {
+        margin-bottom: $spacing-base;
+    }
+}
+
+%post__content {
+    p {
+        margin-bottom: ($spacing-base * 4);
+    }
+}
+
+%post__btn-row {
+    p {
+        font-size: $font-size-sm;
+    }
+
+    a.btn {
+        @include mediaQ-min($bp-md) {
+            float: right;
+        }
+    }   
+}
+
+//--------------------- END ----------------------//
