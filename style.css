@@ -126,6 +126,19 @@ ed145b
 * taking the blog-post as a base for other post types to add on and customize.
 
 ==================================================*/
+.web-links {
+  padding-top: 90px; }
+  .web-links h6 {
+    color: #ed145b;
+    margin-bottom: 30px; }
+  .web-links li {
+    margin-bottom: 15px; }
+  .web-links span {
+    padding-right: 15px; }
+  .web-links a {
+    padding-left: 15px;
+    color: #a2a2a2; }
+
 /* BIO EXECRPT SECTION */
 #home-bio-excerpt {
   -webkit-clip-path: polygon(0 18%, 100% 0, 100% 100%, 0 84%);
@@ -152,5 +165,99 @@ ed145b
 /* PORTFOLIO SECTION */
 #home_portfolio {
   padding: 90px 15px 160px 15px; }
+
+/*  CONTACT PAGE FORM */
+.form-custom-4 {
+  background: none;
+  color: #222; }
+  .form-custom-4 h4 {
+    color: #222;
+    text-transform: uppercase; }
+  .form-custom-4 .form-control {
+    background: #f6f6f6;
+    border-radius: 0;
+    border: 0;
+    border-bottom: 2px solid #f6f6f6;
+    -webkit-box-shadow: none;
+    box-shadow: none; }
+    .form-custom-4 .form-control:focus {
+      border-bottom: 2px solid #ff1f79; }
+  .form-custom-4 input,
+  .form-custom-4 textarea {
+    color: #222;
+    font-weight: normal;
+    letter-spacing: 1px;
+    font-family: Poppins, sans-serif; }
+  .form-custom-4 label {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    line-height: 2;
+    font-weight: 700; }
+  .form-custom-4 .btn-custom-4 {
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 30px;
+    color: #FFFFFF; }
+  .form-custom-4 .contact-form__container {
+    padding: 30px 0 90px 0; }
+  @media (min-width: 767px) {
+    .form-custom-4 .contact-form__container__small-columns {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between; }
+      .form-custom-4 .contact-form__container__small-columns .form-group {
+        width: 32%;
+        display: inline-block; } }
+
+.site-logo {
+  max-width: 60px; }
+
+#home_contact_me_section {
+  position: relative; }
+
+.contact-me-section__image-container {
+  position: relative;
+  height: 300px; }
+  @media (min-width: 992px) {
+    .contact-me-section__image-container {
+      height: 750px; } }
+
+.deer-image {
+  position: absolute;
+  left: 0;
+  bottom: 15px;
+  max-width: 45%;
+  z-index: 1; }
+
+.fox-image {
+  position: absolute;
+  left: 25%;
+  max-width: 35%;
+  bottom: 0;
+  z-index: 2; }
+
+.bg-circle {
+  background: #ed145b;
+  height: 540px;
+  width: 540px;
+  position: absolute;
+  z-index: 0;
+  border-radius: 100%;
+  bottom: 30px; }
+
+.contact-section__speech-bubble {
+  width: 500px;
+  background: #f6f6f6;
+  position: absolute;
+  right: 30px;
+  padding: 89px;
+  border-bottom-right-radius: 50%;
+  border-top-right-radius: 50%;
+  border-top-left-radius: 50%; }
+  .contact-section__speech-bubble p {
+    margin-bottom: 30px; }
 
 /*# sourceMappingURL=style.css.map */

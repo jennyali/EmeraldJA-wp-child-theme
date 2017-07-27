@@ -18,13 +18,13 @@ get_header(); ?>
 
 		<!-- PAGE CONTENT
 		====================================================================-->
-		<div id="primary" class="content-area col-sm-9">
+		<div id="primary" class="content-area col-sm-8 page-content__wrapper">
 			<main id="main" class="site-main">
 
             <!-- CONTACT FORM
             =======================================================================-->
 
-                <?php get_template_part( 'template-parts/page/content' , 'contact-form' ); ?>
+                <?php get_template_part( 'template-parts/page/content' , 'contact-form-2' ); ?>
 
 
 
@@ -34,9 +34,9 @@ get_header(); ?>
 
         <!-- ASIDE
         ======================================================================-->
-        <div class="col-sm-3">
+        <div class="col-sm-4">
 
-            <?php get_sidebar(); ?>
+            <?php get_sidebar('contact'); ?>
 
         </div><!-- .col -->
 
@@ -44,5 +44,4 @@ get_header(); ?>
 </div><!-- .container -->
 
 <?php
-get_sidebar();
 get_footer();

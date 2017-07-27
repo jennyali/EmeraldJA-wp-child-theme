@@ -11,6 +11,7 @@ Updated: 2017-07-22 22:07:50
 */
 
 @import 'utils/module';
+@import 'web-links-widget';
 
 /* BIO EXECRPT SECTION */
 #home-bio-excerpt {
@@ -40,4 +41,139 @@ Updated: 2017-07-22 22:07:50
 /* PORTFOLIO SECTION */
 #home_portfolio {
     padding: 90px 15px 160px 15px;
+}
+
+
+/*  CONTACT PAGE FORM */
+.form-custom-4 {
+    background: none;
+    color: $dark;
+
+    h4 {
+        color: $dark;
+        text-transform: uppercase;
+    }
+
+    .form-control {
+        background: $light-grey;
+        border-radius: 0;
+        border: 0;
+        border-bottom: 2px solid $light-grey;
+        box-shadow: none;
+
+        &:focus {
+            border-bottom: 2px solid $secondary-color;
+        }
+    }
+
+    input,
+    textarea {
+        color: $dark;
+        font-weight: normal;
+        letter-spacing: 1px;
+        font-family: $font-family-paragraph;
+    }
+
+    label {
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        line-height: 2;
+        font-weight: 700;
+    }
+
+    .btn-custom-4 {
+        font-weight: bold;
+        text-transform: uppercase;
+        margin-top: $spacing-base * 2;
+        color: $light;
+    }
+
+    .contact-form__container {
+        padding: $spacing-base * 2 0 $spacing-base * 6 0;
+    }
+    
+    .contact-form__container__small-columns {
+        @include mediaQ-min($bp-sm) {
+            display: flex;
+            justify-content: space-between;
+
+            .form-group {
+                width: 32%;
+                display: inline-block;
+            }
+        }
+    }
+}
+
+// SITE LOGO //
+
+.site-logo {
+    max-width: 60px;
+}
+
+
+// CONTACT ME IMAGE CONTAINER //
+
+#home_contact_me_section {
+    position: relative;
+}
+
+.contact-me-section__image-container {
+    position: relative;
+    height: 300px;
+
+
+        @include mediaQ-min($bp-md) {
+                height: 750px;
+            
+        }
+}
+
+// DEER IMAGE //
+
+.deer-image {
+    position: absolute;
+    left: 0;
+    bottom: 15px;
+    max-width: 45%;
+    z-index: 1;
+}
+
+// FOX IMAGE //
+
+.fox-image {
+    position: absolute;
+    left: 25%;
+    max-width: 35%;
+    bottom: 0;
+    z-index: 2;
+}
+
+// bg-circle //
+
+.bg-circle {
+    background: $primary-color;
+    height: 540px;
+    width: 540px;
+    position: absolute;
+    z-index: 0;
+    border-radius: 100%;
+    bottom: 30px;
+}
+
+// contact-section__speech-bubble 
+
+.contact-section__speech-bubble {
+    width: 500px;
+    background: $light-grey;
+    position: absolute;
+    right: 30px;
+    padding: 89px;
+    border-bottom-right-radius: 50%;
+    border-top-right-radius: 50%;
+    border-top-left-radius: 50%;
+
+    p {
+        margin-bottom: 30px;
+    }
 }
