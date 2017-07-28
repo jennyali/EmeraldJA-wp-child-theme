@@ -1,0 +1,55 @@
+
+#front-page-hero-image {
+    background: $primary-color;
+    padding: 60px 0 240px;
+    //z-index: 3;
+    position: relative;
+
+    -webkit-clip-path: polygon(0 0, 100% 0%, 100% 85%, 0% 100%);
+    clip-path: polygon(0 0, 100% 0%, 100% 85%, 0% 100%);
+
+}
+
+.hero-image__caption {
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
+        h5 {}
+
+        h1 {}
+
+        a {}
+
+}
+
+.hero-image__img {
+
+        img{
+            max-width: 45%;
+            float: right;
+            margin-bottom: 60px;
+        }
+}
+
+.hero-image__btn {
+    color: $light;
+    max-width: 120px;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -30px;
+    font-size: 24px;
+
+}
+
+.hero-image__btn__text {
+    display: block;
+
+}
+
+.hero-image__btn__arrow {
+    font-size: 36px;
+}
