@@ -47,34 +47,41 @@ $bio_excerpt_button_link        = get_field( 'bio_excerpt_button_link' );
 
             </div><!-- .row -->
 
-            <!-- 
-    		=======================================================================-->
-            <div class="row blurb-container">
+            <!-- SKILLS
+            =======================================================================-->
 
-                    <?php //+++     QUERY FOR DISPLAY BLURB POSTS   +++//
+            <div class="row bio-excerpt-section__skills">
 
-                    $args = array(
-                        'post_type' => 'blurb_post',
-                        'orderby'   => 'post_id',
-                        'order'     => 'DESC',
-                        'posts_per_page' => '3',
-                    );
+                <div class="col-sm-4">
 
-                    $loop = new WP_Query( $args );
+                    <h2>Skills</h2>
+                    
+                </div><!-- .col -->
 
-                    if( $loop->have_posts() ) :?>
+                <div class="col-sm-4">
 
-                        <?php while( $loop->have_posts() ) : $loop->the_post(); ?>
+                    <ul class="list-unstyled">
+                        <li><span></span>HTML</li>
+                        <li><span></span>CSS</li>
+                        <li><span></span>JQuery</li>
+                        <li><span></span>Javascript</li>
+                        <li><span></span>Bootstrap</li>
+                        <li><span></span>Wordpress</li>
+                        <li><span></span>PHP</li>
+                    </ul>
+                    
+                </div><!-- .col -->
 
-                            <?php get_template_part( 'template-parts/post/content' , 'blurb-post' ); ?>
+                <div class="col-sm-4">
 
-                        <?php endwhile; wp_reset_query(); ?>
-
-                    <?php else : ?>
-
-                        <h3>Sorry there are no current Blurb Posts.</h3>
-
-                    <?php endif; wp_reset_query(); ?>
+                    <ul class="list-unstyled">
+                        <li><span></span>GitHub</li>
+                        <li><span></span>Visual Studio Code</li>
+                        <li><span></span>Photoshop</li>
+                        <li><span></span>Node.js / MongoDB</li>
+                    </ul>
+                    
+                </div><!-- .col -->
 
             </div><!-- .row -->
 

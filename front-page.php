@@ -21,12 +21,18 @@ $show_contact_form = get_field( 'show_contact_form' );
 get_header(); ?>
 
 
-<!-- HERO - Slider
+<!-- HERO - IMAGE
 =======================================================================-->
 
-<?php if( $show_hero_slider_section == 'Yes'): ?>
+<?php get_template_part( 'template-parts/page/content', 'hero-image' ); ?>
 
-    <?php get_template_part( 'template-parts/page/content', 'hero-slider' ); ?>
+
+<!-- PORTFOLIO - gallery
+=======================================================================-->
+
+<?php if( $show_portfolio_section == 'Yes'): ?>
+
+    <?php get_template_part( 'template-parts/page/content', 'portfolio-section' ); ?>
 
 <?php endif; ?>
 
@@ -36,16 +42,6 @@ get_header(); ?>
 <?php if( $show_bio_excerpt_section == 'Yes'): ?>
 
     <?php get_template_part( 'template-parts/page/content', 'bio-excerpt' ); ?>
-
-<?php endif; ?>
-
-
-<!-- PORTFOLIO - gallery
-=======================================================================-->
-
-<?php if( $show_portfolio_section == 'Yes'): ?>
-
-    <?php get_template_part( 'template-parts/page/content', 'portfolio-section' ); ?>
 
 <?php endif; ?>
 

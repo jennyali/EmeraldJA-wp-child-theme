@@ -11,13 +11,20 @@ Updated: 2017-07-22 22:07:50
 */
 
 @import 'utils/module';
+@import 'components/module';
 @import 'web-links-widget';
 
 /* BIO EXECRPT SECTION */
 #home-bio-excerpt {
-    -webkit-clip-path: polygon(0 18%, 100% 0, 100% 100%, 0 84%);
-    clip-path: polygon(0 18%, 100% 0, 100% 100%, 0 84%);
+    //-webkit-clip-path: polygon(0 18%, 100% 0, 100% 100%, 0 84%);
+    //clip-path: polygon(0 18%, 100% 0, 100% 100%, 0 84%);
     padding: 200px 15px 200px 15px;
+    position: relative;
+    //z-index: 3;
+    //top: -355px;
+
+    -webkit-clip-path: polygon(0 0, 100% 15%, 100% 100%, 0% 100%);
+    clip-path: polygon(0 0, 100% 10%, 100% 100%, 0% 100%);
 }
 
 #home-bio-excerpt .bio-excerpt-section__img {
@@ -116,6 +123,12 @@ Updated: 2017-07-22 22:07:50
 
 #home_contact_me_section {
     position: relative;
+    background: $light-grey;
+    padding-bottom: 120px;
+
+    .container {
+        position: relative;
+    }
 }
 
 .contact-me-section__image-container {
@@ -165,7 +178,7 @@ Updated: 2017-07-22 22:07:50
 
 .contact-section__speech-bubble {
     width: 500px;
-    background: $light-grey;
+    background: $light;
     position: absolute;
     right: 30px;
     padding: 89px;
