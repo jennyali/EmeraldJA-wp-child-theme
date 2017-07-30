@@ -45,6 +45,12 @@ get_header(); ?>
 
 <?php endif; ?>
 
+<!-- SKILL LISTS
+=======================================================================-->
+
+<?php get_template_part( 'template-parts/page/content', 'skills'); ?>
+
+
 <!-- CONTACT ME section
 =======================================================================-->
 

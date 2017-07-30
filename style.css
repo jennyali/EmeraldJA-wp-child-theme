@@ -162,15 +162,31 @@ ed145b
 .hero-image__btn__arrow {
   font-size: 36px; }
 
-.bio-excerpt-section__skills {
-  margin-top: 160px; }
-  .bio-excerpt-section__skills h2 {
-    margin-top: 0;
-    line-height: 1; }
-  .bio-excerpt-section__skills li {
-    background: white;
-    padding: 10px;
-    margin-bottom: 15px; }
+.skills-section {
+  background: #f6f6f6;
+  padding: 100px 15px 200px; }
+
+.bio-excerpt-section__skills h2 {
+  margin-top: 0;
+  line-height: 1; }
+
+.bio-excerpt-section__skills li {
+  background: white;
+  margin-bottom: 15px; }
+
+.skill-bar {
+  width: 100%;
+  background: #FFFFFF; }
+
+.skills {
+  text-align: right;
+  padding-right: 20px;
+  line-height: 40px;
+  color: white; }
+
+.skills.css {
+  width: 90%;
+  background-color: #ed145b; }
 
 .web-links {
   padding-top: 90px; }
@@ -184,6 +200,13 @@ ed145b
   .web-links a {
     padding-left: 15px;
     color: #a2a2a2; }
+
+.nav-alt-style {
+  text-align: center; }
+  .nav-alt-style .nav {
+    position: relative;
+    float: none;
+    display: inline-block; }
 
 /* BIO EXECRPT SECTION */
 #home-bio-excerpt {
@@ -265,7 +288,7 @@ ed145b
 #home_contact_me_section {
   position: relative;
   background: #f6f6f6;
-  padding-bottom: 120px; }
+  padding: 100px 15px 200px; }
   #home_contact_me_section .container {
     position: relative; }
 
