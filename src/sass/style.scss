@@ -13,6 +13,7 @@ Updated: 2017-07-22 22:07:50
 @import 'utils/module';
 @import 'components/module';
 @import 'web-links-widget';
+@import 'layout/alt-header';
 
 /* BIO EXECRPT SECTION */
 #home-bio-excerpt {
@@ -124,7 +125,8 @@ Updated: 2017-07-22 22:07:50
 #home_contact_me_section {
     position: relative;
     background: $light-grey;
-    padding-bottom: 120px;
+    //padding-bottom: 120px;
+    padding: 100px 15px 200px;
 
     .container {
         position: relative;
