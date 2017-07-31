@@ -188,6 +188,26 @@ ed145b
   width: 90%;
   background-color: #ed145b; }
 
+.navbar-brand {
+  padding: 0 15px; }
+
+.site-logo {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  max-width: 100px; }
+
+.navbar-custom-1.affix-top .site-logo {
+  max-width: 100px;
+  -webkit-transition: max-width 0.5s;
+  transition: max-width 0.5s; }
+
+.navbar-custom-1.affix .site-logo {
+  max-width: 60px;
+  -webkit-transition: max-width 0.5s;
+  transition: max-width 0.5s; }
+
 .web-links {
   padding-top: 90px; }
   .web-links h6 {
@@ -207,6 +227,36 @@ ed145b
     position: relative;
     float: none;
     display: inline-block; }
+
+header.navbar-custom-1 .navbar-nav li a {
+  font-weight: bold;
+  margin: 0 30px; }
+
+header.navbar-custom-1 .navbar-nav li:nth-child(3) {
+  margin-right: 70px; }
+
+header.navbar-custom-1 .navbar-nav li:nth-child(4) {
+  margin-left: 70px; }
+
+.footer__widget-area {
+  background: #3c3c3c; }
+  .footer__widget-area .widget {
+    display: inline-block;
+    border-bottom: none;
+    width: 33%; }
+    .footer__widget-area .widget span {
+      color: #a2a2a2; }
+    .footer__widget-area .widget a {
+      color: #f6f6f6; }
+  .footer__widget-area h2 {
+    color: #ed145b; }
+
+.hero-image__img img {
+  position: relative;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  float: none; }
 
 /* BIO EXECRPT SECTION */
 #home-bio-excerpt {
@@ -281,9 +331,6 @@ ed145b
       .form-custom-4 .contact-form__container__small-columns .form-group {
         width: 32%;
         display: inline-block; } }
-
-.site-logo {
-  max-width: 60px; }
 
 #home_contact_me_section {
   position: relative;
