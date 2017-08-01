@@ -8,7 +8,7 @@
 //====================================================================================//
 ?>
 
-<section class="skills-section">
+<section id="home-skills-section" class="skills-section">
 
     <div class="container">
 

@@ -1,0 +1,28 @@
+// SITE LOGO //
+
+.site-logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 100px;
+}
+
+// style when at top of view port.
+.navbar-custom-1.affix-top {
+
+    .site-logo {
+        max-width: 100px;
+        transition: max-width 0.5s;
+    }
+
+}
+
+// style when view port is scrolled down.
+.navbar-custom-1.affix {
+
+    .site-logo {
+        max-width: 60px;
+        transition: max-width 0.5s;
+    }
+
+}

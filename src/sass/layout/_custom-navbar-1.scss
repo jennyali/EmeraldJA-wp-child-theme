@@ -1,0 +1,17 @@
+header.navbar-custom-1 .navbar-nav {
+    //margin-left: 30px;
+    
+        li a {
+            font-weight: bold;
+            margin: 0 30px;
+        }
+
+        li:nth-child(3) {
+            margin-right: 70px;
+        }
+        
+        li:nth-child(4) {
+            margin-left: 70px;
+        }
+
+}

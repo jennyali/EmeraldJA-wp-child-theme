@@ -1,0 +1,23 @@
+.footer__widget-area {
+    background: $dark-grey;
+
+    .widget {
+        display: inline-block;
+        border-bottom: none;
+        width: 33%;
+
+        span {
+            color: $mid-grey;
+        }
+
+        a {
+            color: $light-grey;
+        }
+    }
+
+    h2 {
+        color: $primary-color;
+    }
+
+
+}

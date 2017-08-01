@@ -13,7 +13,7 @@ Updated: 2017-07-22 22:07:50
 @import 'utils/module';
 @import 'components/module';
 @import 'web-links-widget';
-@import 'layout/alt-header';
+@import 'layout/module';
 
 /* BIO EXECRPT SECTION */
 #home-bio-excerpt {
@@ -111,12 +111,6 @@ Updated: 2017-07-22 22:07:50
             }
         }
     }
-}
-
-// SITE LOGO //
-
-.site-logo {
-    max-width: 60px;
 }
 
 
