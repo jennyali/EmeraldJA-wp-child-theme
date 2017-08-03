@@ -1,0 +1,25 @@
+
+.cpt-widget-list {
+
+    .cpt-widget-list__item {
+        position: relative;
+        height: 90px;
+
+        img {
+            float: left;
+            margin-right: $spacing-sm;
+        }
+    }
+
+    .cpt-widget-list__item__title {
+        display: block;
+        margin-bottom: 0;
+        letter-spacing: 1px;
+        font-size: $font-size-base;
+    }
+
+    .cpt-widget-list__item__date {
+        font-size: $font-size-sm;
+    }
+
+}

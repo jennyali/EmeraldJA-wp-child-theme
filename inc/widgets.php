@@ -27,12 +27,78 @@ class Ja_Display_CPT_Widget extends WP_Widget {
 
     public function widget( $args, $instance ) {
 
-        echo $args['before_widget'];
+        //======== DATA CHECK ========//
 
-        echo $args['before_title'] . $instance['title'] . $args['after_title'];
+        // Set widget ID.
+        if ( ! isset( $args['widget_id'] ) ) {
+            $args['widget_id'] = $this->id;
+        }
+
+        // Post Type Filter
+        $post_type = ( ! empty( $instance['post-type'] ) ) ? $instance['post-type'] : 'post';
+
+        // Title filter.
+        $title = ( ! empty( $instance['title'] ) ) ? $instance['title'] : __( 'Recent Posts');
+        $title = apply_filters( 'widget_title', $title, $instance, $this->id_base );
+
+        // Number check / default number. 
+        $number = ( ! empty( $instance['number'] ) ) ? absint( $instance['number'] ) : 3;
+        if ( ! $number ) {
+            $number = 3;
+        }
+
+        //========== WP QUERY =========//
+
+        $custom_query = new WP_Query( apply_filters( 'widget_posts_args', array(
+            'posts_per_page'        => $number,
+            'no_found_rows'         => true,
+            'post_status'           => 'publish',
+            'ignore_sticky_posts'   => true,
+            'orderby'               => 'date',
+            'post_type'             => $post_type
+
+        ) ) );
+
+        //========== DISPLAY ==========//
+
+        if ( $custom_query->have_posts() ) :
+        ?>
+
+        <?php echo $args['before_widget']; ?>
+
+        <?php if ( $title ) {
+            echo $args['before_title'] . $instance['title'] . $args['after_title'];
+        } ?>
+
+        <ul class="cpt-widget-list">
+        <?php while ( $custom_query->have_posts() ) : $custom_query->the_post(); ?>
+
+            <li class="cpt-widget-list__item">
+
+                <?php if( has_post_thumbnail() ) {
+
+                    the_post_thumbnail( 'footer-thumb' );
+
+                }?>
+
+                <a href="<?php the_permalink(); ?>" class="cpt-widget-list__item__title"><?php get_the_title() ? the_title() : the_ID(); ?></a>
+                
+                <span class="cpt-widget-list__item__date"><?php echo get_the_date(); ?></span>
 
 
-        echo $args['after_widget'];
+            </li><!-- .cpt-widget-list__item -->
+
+        <?php endwhile; ?>
+
+        </ul><!-- .cpt-widget-list -->
+
+        <?php echo $args['after_widget']; ?>
+
+        <?php 
+
+        wp_reset_postdata();
+
+        endif;
     }
 
     /**
