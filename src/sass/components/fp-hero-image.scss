@@ -1,12 +1,16 @@
 
 #front-page-hero-image {
     background: $primary-color;
-    padding: 60px 0 240px;
-    //z-index: 3;
+    padding: 60px 0 100px;
     position: relative;
+    height: 100vh;
 
-    -webkit-clip-path: polygon(0 0, 100% 0%, 100% 85%, 0% 100%);
-    clip-path: polygon(0 0, 100% 0%, 100% 85%, 0% 100%);
+    @include mediaQ-min($bp-sm) {
+        padding: 60px 0 240px;
+        -webkit-clip-path: polygon(0 0, 100% 0%, 100% 85%, 0% 100%);
+        clip-path: polygon(0 0, 100% 0%, 100% 85%, 0% 100%);
+        height: initial;
+    }
 
 }
 
@@ -15,6 +19,17 @@
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
+
+        @include mediaQ-max($bp-sm) {
+            z-index: 5;
+            bottom: -93px;
+            width: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100%;
+            text-align: center;
+            top: initial;
+        }
 
         h5 {}
 
@@ -30,6 +45,10 @@
             max-width: 45%;
             float: right;
             margin-bottom: 60px;
+
+            @include mediaQ-max($bp-sm) {
+                max-width: 100%;
+            }
         }
 }
 

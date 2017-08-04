@@ -1,6 +1,14 @@
 .nav-alt-style {
     text-align: center;
 
+    @include mediaQ-max($bp-md) {
+        padding-left: 120px;
+
+        @include mediaQ-max($bp-sm) {
+            padding-left: 0;
+        }
+    }
+
     .nav {
         position: relative;
         float: none;

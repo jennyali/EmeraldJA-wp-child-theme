@@ -22,7 +22,7 @@
                 <a href="http://localhost/wordpress/contact/" class="btn-custom-4">Click</a>
             </div>
 
-            <div class="col-sm-12 contact-me-section__image-container">
+            <div class="col-sm-12 hidden-xs contact-me-section__image-container">
                 
                 <img src="http://localhost/wordpress/wp-content/uploads/2017/07/deer-image-bw.png" class="deer-image">
 

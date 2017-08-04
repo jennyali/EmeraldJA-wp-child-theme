@@ -2,16 +2,28 @@ header.navbar-custom-1 .navbar-nav {
     //margin-left: 30px;
     
         li a {
-            font-weight: bold;
+            //font-weight: bold;
             margin: 0 30px;
         }
 
         li:nth-child(3) {
-            margin-right: 70px;
+           // margin-right: 70px;
         }
         
         li:nth-child(4) {
-            margin-left: 70px;
+            //margin-left: 70px;
         }
 
 }
+
+header.navbar-custom-1.affix-top {
+
+    .nav-alt-style {
+        //right: -240px;
+    }
+
+    #header-menu.menu-open {
+        right: 0px;
+    }
+}
+

@@ -75,11 +75,13 @@ class Ja_Display_CPT_Widget extends WP_Widget {
 
             <li class="cpt-widget-list__item">
 
-                <?php if( has_post_thumbnail() ) {
+                <?php if( has_post_thumbnail() ) : ?>
 
-                    the_post_thumbnail( 'footer-thumb' );
+                    <div class="hidden-xs">
+                        <?php the_post_thumbnail( 'footer-thumb' ); ?>
+                    </div>
 
-                }?>
+                <?php endif; ?>
 
                 <a href="<?php the_permalink(); ?>" class="cpt-widget-list__item__title"><?php get_the_title() ? the_title() : the_ID(); ?></a>
                 

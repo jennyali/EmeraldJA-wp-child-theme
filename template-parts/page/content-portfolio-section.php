@@ -27,10 +27,6 @@ $portfolio_section_text = get_field( 'portfolio_section_text' );
 
                     <?php endif; ?>
 
-                    <div class="page__divider">
-                        <hr>
-                    </div><!-- .page__divider -->
-
                 </div><!-- .headline -->
             </div><!-- .row -->
 
