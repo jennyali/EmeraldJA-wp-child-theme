@@ -1,9 +1,17 @@
 
+.widget_ja_display_cpt_widget {
+    text-align: left;
+}
+
 .cpt-widget-list {
 
     .cpt-widget-list__item {
         position: relative;
-        height: 90px;
+        height: 20px;
+
+        @include mediaQ-min($bp-sm) {
+            height: 90px;
+        }
 
         img {
             float: left;
@@ -12,10 +20,14 @@
     }
 
     .cpt-widget-list__item__title {
-        display: block;
+        display: inline-block;
         margin-bottom: 0;
         letter-spacing: 1px;
         font-size: $font-size-base;
+
+        @include mediaQ-min($bp-sm) {
+            display: block;
+        }
     }
 
     .cpt-widget-list__item__date {

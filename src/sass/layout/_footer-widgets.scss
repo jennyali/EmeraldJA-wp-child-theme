@@ -1,6 +1,10 @@
 .footer__widget-area {
     background: $dark-grey;
-    padding: $spacing-lg * 3 0;
+    padding: $spacing-lg * 3 0 $spacing-base * 2;
+
+    @include mediaQ-min($bp-sm) {
+        padding: $spacing-lg * 3 0;
+    }
 
     .footer__widget-area__container {
         position: relative;
@@ -9,12 +13,16 @@
     .widget {
         display: inline-block;
         border-bottom: none;
-        width: 49%;
+        width: 100%;
         padding: 0 $spacing-base;
         margin-bottom: $spacing-base * 2;
 
-        @include mediaQ-min($bp-lg) {
-            width: 33%;
+        @include mediaQ-min($bp-sm) {
+            width: 49%;
+
+            @include mediaQ-min($bp-lg) {
+                width: 33%;
+            }
         }
 
         span {
@@ -37,4 +45,13 @@
     }
 
 
+    #nav_menu-2 {
+
+        li {
+            @include mediaQ-max($bp-sm) {
+                display: inline-block;
+                margin: 0 $spacing-base;
+            }
+        }
+    }
 }

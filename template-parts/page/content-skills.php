@@ -23,7 +23,7 @@
                     
             </div><!-- .col -->
 
-            <div class="col-sm-4">
+            <div class="col-xs-6 col-sm-4">
 
                 <ul class="list-unstyled skill-list">
 
@@ -67,7 +67,7 @@
                     
             </div><!-- .col -->
 
-            <div class="col-sm-4">
+            <div class="col-xs-6 col-sm-4">
 
                 <ul class="list-unstyled skill-list">
 

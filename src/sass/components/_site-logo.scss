@@ -1,18 +1,23 @@
 // SITE LOGO //
 
 .site-logo {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
+    //position: absolute;
+    //left: 50%;
+    //transform: translateX(-50%);
     max-width: 100px;
+    position: absolute;
 }
 
 // style when at top of view port.
 .navbar-custom-1.affix-top {
 
     .site-logo {
-        max-width: 100px;
+        max-width: 60px;
         transition: max-width 0.5s;
+
+        @include mediaQ-min($bp-sm) {
+            max-width: 100px;
+        }
     }
 
 }
