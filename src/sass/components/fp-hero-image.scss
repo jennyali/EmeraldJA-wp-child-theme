@@ -5,7 +5,7 @@
     position: relative;
     height: 100vh;
 
-    @include mediaQ-min($bp-sm) {
+    @include mediaQ-min($bp-md) {
         padding: 60px 0 240px;
         -webkit-clip-path: polygon(0 0, 100% 0%, 100% 85%, 0% 100%);
         clip-path: polygon(0 0, 100% 0%, 100% 85%, 0% 100%);
@@ -19,10 +19,13 @@
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
+    z-index: 5;
+    //background: rgba($dark, 0.2);
+    padding: 15px;
 
-        @include mediaQ-max($bp-sm) {
-            z-index: 5;
-            bottom: -93px;
+        @include mediaQ-max($bp-lg) {
+            //z-index: 5;
+            bottom: -150px;
             width: 100%;
             left: 50%;
             transform: translateX(-50%);
@@ -31,7 +34,9 @@
             top: initial;
         }
 
-        h5 {}
+        h5 {
+            font-weight: bold;
+        }
 
         h1 {}
 
@@ -47,7 +52,7 @@
             margin-bottom: 60px;
 
             @include mediaQ-max($bp-sm) {
-                max-width: 100%;
+                max-width: 75%;
             }
         }
 }

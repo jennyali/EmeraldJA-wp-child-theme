@@ -50,7 +50,7 @@
 
 		<?php if( !is_front_page() ) : ?>
 
-		<section class="breadcrumbs-section container-fluid">
+		<section class="breadcrumbs-section container-fluid hidden-xs">
 			<div class="breadcrumb container">
 				<?php
 					if ( function_exists('yoast_breadcrumb') ) {

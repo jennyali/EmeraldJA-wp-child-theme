@@ -15,7 +15,7 @@
         max-width: 60px;
         transition: max-width 0.5s;
 
-        @include mediaQ-min($bp-sm) {
+        @include mediaQ-min($bp-lg) {
             max-width: 100px;
         }
     }

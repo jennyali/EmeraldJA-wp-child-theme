@@ -20,7 +20,7 @@ Updated: 2017-07-22 22:07:50
     position: relative;
     padding: 100px 15px 0px 15px;
 
-    @include mediaQ-min($bp-sm) {
+    @include mediaQ-min($bp-md) {
         -webkit-clip-path: polygon(0 0, 100% 15%, 100% 100%, 0% 100%);
         clip-path: polygon(0 0, 100% 10%, 100% 100%, 0% 100%);
         padding: 200px 15px 200px 15px;
@@ -57,7 +57,7 @@ Updated: 2017-07-22 22:07:50
 #home_portfolio {
     padding: 100px 15px 120px 15px;
 
-    @include mediaQ-min($bp-sm) {
+    @include mediaQ-min($bp-md) {
         padding: 200px 15px 260px 15px;
     }
 }
@@ -139,7 +139,7 @@ Updated: 2017-07-22 22:07:50
         position: relative;
     }
 
-    @include mediaQ-min($bp-sm) {
+    @include mediaQ-min($bp-md) {
         padding: 100px 15px 200px;
     }
 }
