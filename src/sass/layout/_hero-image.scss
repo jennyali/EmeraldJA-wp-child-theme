@@ -5,5 +5,9 @@
         left: 50%;
         transform: translateX(-50%);
         float: none;
+
+        @include mediaQ-min($bp-lg) {
+            transform: none;
+        }
     }
 }

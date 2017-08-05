@@ -3,7 +3,7 @@
     background: $light-grey;
     padding: 100px 15px 100px;
 
-    @include mediaQ-min($bp-sm) {
+    @include mediaQ-min($bp-md) {
         padding: 130px 15px 360px;
 
         -webkit-clip-path: polygon(0 0, 100% 0%, 100% 85%, 0% 100%);
