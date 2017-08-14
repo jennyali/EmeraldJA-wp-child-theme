@@ -126,6 +126,9 @@ ed145b
 * taking the blog-post as a base for other post types to add on and customize.
 
 ==================================================*/
+.widget h2 {
+  font-weight: bold; }
+
 #front-page-hero-image {
   background: #ed145b;
   padding: 60px 0 100px;
@@ -407,6 +410,22 @@ header.navbar-custom-1.affix #header-menu.menu-open {
 
 .slick-next {
   right: 0; }
+
+.blog-post__header h4 {
+  margin: 30px 0; }
+
+.single-portfolio-post__weblink {
+  background: #ed145b;
+  color: white;
+  padding: 15px;
+  font-size: 18px;
+  font-style: italic; }
+  @media (max-width: 767px) {
+    .single-portfolio-post__weblink {
+      padding: 10px;
+      font-size: 16px; } }
+  .single-portfolio-post__weblink a {
+    padding: 0 30px; }
 
 /* BIO EXECRPT SECTION */
 #home-bio-excerpt {
