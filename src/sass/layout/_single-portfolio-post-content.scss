@@ -1,0 +1,16 @@
+.single-portfolio-post__weblink {
+    background: $primary-color;
+    color: white;
+    padding: 15px;
+    font-size: 18px;
+    font-style: italic;
+
+    @include mediaQ-max($bp-sm) {
+        padding: 10px;
+        font-size: 16px;
+    }
+
+    a {
+        padding: 0 30px;
+    }
+}
