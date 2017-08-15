@@ -127,7 +127,19 @@ ed145b
 
 ==================================================*/
 .widget h2 {
-  font-weight: bold; }
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif; }
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Montserrat", sans-serif;
+  color: #3c3c3c; }
+
+p {
+  color: #3c3c3c; }
 
 #front-page-hero-image {
   background: #ed145b;
@@ -151,7 +163,7 @@ ed145b
   padding: 15px; }
   @media (max-width: 1200px) {
     .hero-image__caption {
-      bottom: -150px;
+      bottom: -175px;
       width: 100%;
       left: 50%;
       -webkit-transform: translateX(-50%);
@@ -187,6 +199,10 @@ ed145b
 .hero-image__btn__arrow {
   font-size: 36px; }
 
+.bio-excerpt-section__skills .widget_ja_skill_bar_widget {
+  padding: 0;
+  padding-bottom: 10px; }
+
 .skills-section {
   background: #f6f6f6;
   padding: 100px 15px 100px; }
@@ -208,14 +224,19 @@ ed145b
   width: 100%;
   background: #FFFFFF; }
 
+.skill-bar__title {
+  background-color: #f6f6f6; }
+
 .skills {
   text-align: right;
   padding-right: 20px;
-  color: white;
-  line-height: 24px; }
+  color: transparent;
+  line-height: 24px;
+  background: #ed145b; }
   @media (min-width: 767px) {
     .skills {
-      line-height: 40px; } }
+      line-height: 40px;
+      color: white; } }
 
 .skills.css {
   width: 90%;
@@ -355,6 +376,16 @@ header.navbar-custom-1.affix #header-menu.menu-open {
       -webkit-transform: none;
       transform: none; } }
 
+.hero-image__caption h1 {
+  font-family: "Raleway", sans-serif;
+  font-size: 62px; }
+  @media (min-width: 767px) {
+    .hero-image__caption h1 {
+      font-size: 96px; } }
+  @media (min-width: 767px) and (min-width: 992px) {
+    .hero-image__caption h1 {
+      font-size: 120px; } }
+
 .slick-slider-wrapper {
   position: relative;
   background: #222; }
@@ -426,6 +457,8 @@ header.navbar-custom-1.affix #header-menu.menu-open {
       font-size: 16px; } }
   .single-portfolio-post__weblink a {
     padding: 0 30px; }
+    .single-portfolio-post__weblink a:hover, .single-portfolio-post__weblink a:focus {
+      color: #222; }
 
 /* BIO EXECRPT SECTION */
 #home-bio-excerpt {

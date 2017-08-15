@@ -182,3 +182,34 @@ function custom_pagination( $numpages = '', $pagerange = '', $paged = '' ) {
 	}
 
 }
+
+/*============================================================
+
+	Include custom sidebars
+
+===============================================================*/
+
+function emerald_ja_child_widgets_init() {
+
+	register_sidebar( array(
+		'name'          => esc_html__( 'Skills Widget Area', 'emerald_ja' ),
+		'id'            => 'skills-widget-area',
+		'description'   => esc_html__( 'Add skill bar widgets here.', 'emerald_ja' ),
+		'before_widget' => '<div id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h2 class="widget-title">',
+		'after_title'   => '</h2>',
+	) );
+
+	register_sidebar( array(
+		'name'          => esc_html__( 'Skills Widget Area 2', 'emerald_ja' ),
+		'id'            => 'skills-widget-area-2',
+		'description'   => esc_html__( 'Add skill bar widgets here.', 'emerald_ja' ),
+		'before_widget' => '<div id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h2 class="widget-title">',
+		'after_title'   => '</h2>',
+	) );
+
+}
+add_action( 'widgets_init', 'emerald_ja_child_widgets_init' );

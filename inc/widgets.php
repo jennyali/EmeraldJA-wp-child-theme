@@ -162,4 +162,105 @@ function register_ja_display_cpt_widget() {
 
 add_action( 'widgets_init', 'register_ja_display_cpt_widget' );
 
+
+
+/*==============================================================
+
+                   Skill Bar Widget
+
+================================================================*/
+
+class Ja_Skill_Bar_Widget extends WP_Widget {
+
+    public function __construct() {
+        $widget_ops = array(
+            'description' => 'Displays a "progress" like bar.'
+        );
+
+        parent::__construct( 'ja_skill_bar_widget', __( 'Skill Bar Widget' ), $widget_ops );
+    }
+
+    /**
+    * Outputs the content for the current Display CPT widget instance.
+    */
+
+    public function widget( $args, $instance ) {
+
+        //======== DATA CHECK ========//
+
+        // Set widget ID.
+        if ( ! isset( $args['widget_id'] ) ) {
+            $args['widget_id'] = $this->id;
+        }
+
+        // Title filter.
+        $title = ( ! empty( $instance['title'] ) ) ? $instance['title'] : __( 'Skill Bar');
+        $title = apply_filters( 'widget_title', $title, $instance, $this->id_base );
+
+        // Number check / default number. 
+        $skill_number = ( ! empty( $instance['skill-number'] ) ) ? absint( $instance['skill-number'] ) : 0;
+
+        //========== DISPLAY ==========//
+
+
+        ?>
+
+        <?php echo $args['before_widget']; ?>
+
+        <div class="skill-bar">
+            <div class="skill-bar__title visible-xs"><?php echo $title; ?></div>
+            <div class="skills" style="width: <?php echo $skill_number; ?>%"><?php echo $title; ?></div>
+        </div>
+
+        <?php echo $args['after_widget'];
+
+    }
+
+    /**
+    * Handles updating the settings for the current Display CPT widget instance.
+    */
+
+    public function update( $new_instance, $old_instance ) {
+        $instance = $old_instance;
+
+        $instance['title'] = sanitize_text_field( $new_instance['title'] );
+        $instance['skill-number'] = (int) $new_instance['skill-number'];
+
+        return $instance;
+    }
+
+    /**
+    * Outputs the settings form for the Display CPT widget.
+    */
+ 
+    public function form( $instance ) {
+        $title          = isset( $instance['title'] ) ? esc_attr( $instance['title'] ) : '';
+        $skill_number   = isset( $instance['skill-number'] ) ? absint( $instance['skill-number'] ) : 0 ;
+
+?>
+
+        <p><!-- $title -->
+            <label for="<?php echo $this->get_field_id( 'title' ); ?>"><?php _e( 'Name of Skill:' ); ?></label>
+            <input class="widefat" id="<?php echo $this->get_field_id( 'title' ); ?>" name="<?php echo $this->get_field_name( 'title' ); ?>" type="text" value="<?php echo $title; ?>" />
+        </p>
+
+        <p><!-- $num_of_posts -->
+            <label for="<?php echo $this->get_field_id( 'skill-number' ); ?>"><?php _e( 'Number Skill Percentage:' ); ?></label>
+            <input class="" id="<?php echo $this->get_field_id( 'skill-number' ); ?>" name="<?php echo $this->get_field_name( 'skill-number' ); ?>" type="number" value="<?php echo $skill_number; ?>" />
+        </p>
+
+<?php
+
+    }
+
+}
+
+//# Register Widget
+
+function register_ja_skill_bar_widget() {
+    register_widget( 'Ja_Skill_bar_Widget' );
+}
+
+add_action( 'widgets_init', 'register_ja_skill_bar_widget' );
+
 ?>

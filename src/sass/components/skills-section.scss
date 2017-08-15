@@ -34,14 +34,20 @@
     background: $light;
 }
 
+.skill-bar__title {
+    background-color: $light-grey;
+}
+
 .skills {
     text-align: right;
     padding-right: 20px;
-    color: white;
+    color: transparent;
     line-height: 24px;
+    background: $primary-color;
 
     @include mediaQ-min($bp-sm) {
         line-height: 40px;
+        color: white;
     }
 }
 
