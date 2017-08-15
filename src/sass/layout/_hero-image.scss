@@ -11,3 +11,19 @@
         }
     }
 }
+
+.hero-image__caption {
+
+    h1 {
+        font-family: $font-family-heading;
+        font-size: 62px;
+
+        @include mediaQ-min($bp-sm) {
+            font-size: 96px;
+
+            @include mediaQ-min($bp-md) {
+                font-size: 120px;
+            }
+        }
+    }
+}

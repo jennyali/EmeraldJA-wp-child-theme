@@ -25,85 +25,14 @@
 
             <div class="col-xs-6 col-sm-4">
 
-                <ul class="list-unstyled skill-list">
-
-                    <li>
-                        <div class="skill-bar">
-                            <div class="skills css">HTML</div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="skill-bar">
-                            <div class="skills css">CSS/SASS</div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="skill-bar">
-                            <div class="skills css">jQuery</div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="skill-bar">
-                            <div class="skills css">Javascript</div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="skill-bar">
-                            <div class="skills css">Bootstrap</div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="skill-bar">
-                            <div class="skills css">WordPress</div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="skill-bar">
-                            <div class="skills css">PHP</div>
-                        </div>
-                    </li>
-
-                </ul><!-- .skill-list -->
+                    <?php dynamic_sidebar( 'skills-widget-area' ); ?>
                     
             </div><!-- .col -->
 
             <div class="col-xs-6 col-sm-4">
 
-                <ul class="list-unstyled skill-list">
+                <?php dynamic_sidebar( 'skills-widget-area-2' ); ?>
 
-                    <li>
-                        <div class="skill-bar">
-                            <div class="skills css">GitHub</div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="skill-bar">
-                            <div class="skills css">Gulp</div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="skill-bar">
-                            <div class="skills css">Webpack</div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="skill-bar">
-                            <div class="skills css">Photoshop</div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="skill-bar">
-                            <div class="skills css">Node.js / express.js</div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="skill-bar">
-                            <div class="skills css">MongoDB</div>
-                        </div>
-                    </li>
-
-                </ul><!-- .skill-list -->
-                    
             </div><!-- .col -->
 
         </div><!-- .row -->

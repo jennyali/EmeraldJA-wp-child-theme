@@ -26,7 +26,7 @@
 	<!-- Font Icons -->
     <link href="https://file.myfontastic.com/ncjQH3qL3iqtxPyrLNBQDo/icons.css" rel="stylesheet">
 	<!-- Google fonts -->
-    
+<link href="https://fonts.googleapis.com/css?family=Montserrat:400,600|Raleway:300" rel="stylesheet">
     <!-- HTML5 shiv and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>

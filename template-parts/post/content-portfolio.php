@@ -13,6 +13,9 @@ $port_image_two = get_field( 'port_image_two' );
 $port_image_three = get_field( 'port_image_three' );
 $port_image_four = get_field( 'port_image_four' );
 
+$port_have_link = get_field( 'port_have_link' );
+$port_external_url = get_field( 'port_external_url');
+
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
@@ -35,6 +38,8 @@ $port_image_four = get_field( 'port_image_four' );
         </div><!-- .row -->
     </div><!-- .container -->
 
+    <?php if( $port_have_link == true ) : ?>
+
     <!-- WEBSITE LINK
     ======================================================================-->
     <div class="container-fluid single-portfolio-post__weblink">
@@ -43,13 +48,15 @@ $port_image_four = get_field( 'port_image_four' );
             <div class="container">
                 <div class="row">
 
-                    <a href="#" class="col-sm-12">Website Link: www.website.org</a>
+                    <a href="<?php echo $port_external_url; ?>" target="_blank" class="col-sm-12">Website Link: <?php echo $port_external_url; ?></a>
 
                 </div><!-- .row -->
             </div><!-- .container -->
 
         </div><!-- .row -->
     </div><!-- .container-fluid -->
+
+    <?php endif; ?>
 
     <!-- SLIDER
     ======================================================================-->

@@ -12,5 +12,10 @@
 
     a {
         padding: 0 30px;
+
+        &:hover,
+        &:focus {
+            color: $dark;
+        }
     }
 }
